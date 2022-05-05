@@ -1,0 +1,87 @@
+{    
+  "extends": [        
+    "react-app",
+    "eslint:recommended",
+    "plugin:react/recommended"/*,
+    "plugin:prettier/recommended"  */  
+  ],  
+  "rules": {    
+    "react-hooks/rules-of-hooks": 2, // Checks rules of Hooks
+    "react-hooks/exhaustive-deps": 2, // Checks effect dependencies
+    "react/prop-types": 2,    
+    "react/display-name": 2,
+    // first argument: 0 - silent, 1 - warning, 2 - error
+    "template-curly-spacing" : 2,    
+    "indent": [1, 2, {
+     // "ignoredNodes": ["TemplateLiteral"]
+    }],
+    "consistent-return": 2,        
+    "no-else-return"   : 2,        
+    "space-unary-ops"  : 2,
+    "no-mixed-operators": 0,
+    "promise/no-nesting": 0,
+    "no-empty": 2,    
+    "no-irregular-whitespace": [0, {"skipComments": true, "skipStrings": true}],
+    "react/no-unescaped-entities": 0,
+    "no-case-declarations": 0,
+    "no-dupe-keys": 0,
+    "no-async-promise-executor":0,
+    "react/no-children-prop": 0,
+    "react/no-string-refs": 0,
+    "react/jsx-key": 2,    
+    "no-prototype-builtins": 0,
+    "no-inner-declarations": 0,
+    "no-useless-concat": 0,
+    "no-unsafe-optional-chaining": 0,
+    "import/no-anonymous-default-export": 0,
+    "no-constant-condition": 2,
+    "array-callback-return": 0,
+    "no-mixed-spaces-and-tabs": [0, "smart-tabs"],
+    "strict": [2, "safe"],    
+    "function-paren-newline": ["error", { "minItems": 3 }],    
+    "no-multiple-empty-lines": [1, {"max": 1, "maxEOF": 1}],
+    "no-debugger": 2,
+    "brace-style": [2, "1tbs", { "allowSingleLine": true }],
+    "no-trailing-spaces": [0, { "ignoreComments": true, "skipBlankLines": true }],
+    "keyword-spacing": 2,
+    "space-before-function-paren": [2, "never"],
+    "spaced-comment": [2, "always"],
+    "vars-on-top": 2,
+    "no-undef": 2,
+    "no-undefined": 2,
+    "comma-dangle": [2, "never"],
+    "quotes": [2, "double"],
+    "semi": [2, "always"],
+    "guard-for-in": 0,
+    "no-eval": 2,
+    "no-with": 2,
+    "valid-typeof": 2,
+    "no-unused-vars": 2,
+    "no-continue": 0,
+    "no-extra-semi": 1,
+    "no-unreachable": 1,
+    "no-unused-expressions": [2, {"allowShortCircuit": true, "allowTernary": true, "allowTaggedTemplates": true, "enforceForJSX": true}],
+    "no-magic-numbers": "off",    
+    "max-len": [0, { "code": 160 }],
+    "react/prefer-es6-class": 0
+  }, 
+  "parserOptions": {
+    "ecmaFeatures": {
+        "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+},
+"plugins": [
+    "react"
+],
+"parser": "@babel/eslint-parser",
+"ignorePatterns": [ "**/src/*.test.js"],
+"env": {
+  "browser": true,
+  "node": true,
+  "es6": true,
+  "es2021": true,
+  "jest": true
+}
+}
